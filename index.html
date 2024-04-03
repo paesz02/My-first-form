@@ -17,30 +17,35 @@
           <div><input type="text" name="email" placeholder="Type your e-mail" ></div>
           
           <div> <select name="lista" >
-                 <option disabled selected > How old are you</option>
-                 <option > +20 years </option>
-                 <option > +25 years </option>
-                 <option > +40  years </option>
+                 <option disabled selected > How old are you?</option>
+                 <option value="+20 years"> +20 years </option>
+                 <option value="+25 years" > +25 years </option>
+                 <option value="+40 years"> +40  years </option>
                  </select></div>
 
-          <h2> What is your city</h2>
+          <h2> What is your city?</h2>
           <div class="input">
-              <div><input type="radio" name="City"> <span>Florianopolis</span></div>
-              <div> <input type="radio" name="City"> <span>Rio de Janeiro</span></div>
-              <div> <input type="radio" name="City"> <span>São Paulo</span></div>
+              <div><input type="radio"  value="Florianopolis" name="City"> <span>Florianopolis</span></div>
+              <div> <input type="radio"  value="Rio de Janeiro" name="City"> <span>Rio de Janeiro</span></div>
+              <div> <input type="radio"  value="São Paulo" name="City"> <span>São Paulo</span></div>
           </div>
 
-          <h2> What do you like to eat</h2>
+          <h2> What do you like to eat?</h2>
           <div class="input">
-              <div><input type="checkbox" name="Food"> <span>Fruits</span></div>
-              <div> <input type="checkbox" name="Food"> <span>Legumes</span></div>
-              <div> <input type="checkbox" name="Food"> <span>Fast Food</span></div>
+              <div><input type="checkbox" name="Food[]" value="Fruits"> <span>Fruits</span></div>
+              <div> <input type="checkbox" name="Food[]" value="Legumes"> <span>Legumes</span></div>
+              <div> <input type="checkbox" name="Food[]" value="Fast Food"> <span>Fast Food</span></div>
+          </div>
+
+          <div>
+            <textarea name="observação" placeholder="Do you have any observations?"></textarea>
           </div>
 
           <div>
               <input type="submit"  name="Action" value="To send">
           </div>
-         
+          
+          
       </fieldset>
    </form>
 </body>
